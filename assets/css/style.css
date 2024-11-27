@@ -286,9 +286,35 @@ summary {
   text-decoration: underline;
 }
 
+.item1 {
+  width: 80%;
+}
+
+.item {
+  cursor: pointer;
+  text-align: justify;
+  font-size: 20px;
+  color: #218dff;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.item.clicked {
+  color: #f8f9fa;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.intro2 {
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
 /* Flecha en contenido colapsado */
 details summary::marker {
-  color: indigo;
+  color: #007bff;
   font-size: 1.2rem;
 }
 
@@ -321,7 +347,7 @@ input[type="checkbox"]:checked + .details-button + .details-content {
 
 /* Estilo de hipervínculo */
 .ani {
-  color: #6969f5; /* Color azul típico de hipervínculo */
+  color: #007bff;/* Color azul típico de hipervínculo */
   text-decoration: underline; /* Subrayado */
   cursor: pointer; /* Cursor de hipervínculo */
   text-shadow: 2px 2px 2px rgb(0, 0, 0); /* Sombra inicial */
@@ -352,12 +378,14 @@ input[type="checkbox"]:checked + .details-button + .details-content {
 /* Ocultar el texto inicialmente */
 .details-content2 {
   display: none;
+  width: 100%;
 }
 
 .detailstext2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 /* Mostrar el contenido cuando el checkbox esté activado */

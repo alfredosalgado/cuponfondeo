@@ -41,3 +41,12 @@ elementos.forEach((elemento) => {
 
   observer.observe(elemento);
 });
+
+const items = document.querySelectorAll(".item");
+
+// Agrega un evento de clic a cada elemento
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.classList.add("clicked"); // Agrega la clase "clicked" al elemento
+  });
+});
