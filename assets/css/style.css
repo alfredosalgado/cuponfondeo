@@ -98,7 +98,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  background-color: #03122b67;
+  background-color: #17305296;
   width: 80%;
   padding: 30px 0;
 }
@@ -144,7 +144,6 @@ h2 {
 
 .subt {
   font-size: 32px;
-  color: white;
   text-align: center;
   width: 90%;
 }
@@ -302,11 +301,45 @@ input[type="checkbox"]:checked + .details-button + .details-content {
   display: block;
 }
 
+/* Animación de pulso suave */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Clase para aplicar el pulso infinito */
+.pulse-infinite {
+  animation: pulse 3.5s infinite; /* Pulso suave cada 2 segundos */
+}
+
+/* Estilo de hipervínculo */
+.ani {
+  color: #6969f5; /* Color azul típico de hipervínculo */
+  text-decoration: underline; /* Subrayado */
+  cursor: pointer; /* Cursor de hipervínculo */
+  text-shadow: 2px 2px 2px rgb(0, 0, 0); /* Sombra inicial */
+}
+
+/* Estilo por defecto después del clic */
+.ani.clicked {
+  color: white; /* Color por defecto del texto */
+  text-decoration: none; /* Sin subrayado */
+  cursor: default; /* Cursor por defecto */
+  text-shadow: none;
+}
+
+
 /*Expandir titulos home*/
 /* Estilos básicos para el botón */
 .details-button2 {
   cursor: pointer;
-  color: #007bff;
   text-decoration: none;
   border: none;
   background: none;
