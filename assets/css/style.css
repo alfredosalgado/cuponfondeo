@@ -292,7 +292,7 @@ summary {
 
 .item {
   cursor: pointer;
-  text-align: justify;
+  text-align:start;
   font-size: 20px;
   color: #218dff;
   font-family: "Raleway", sans-serif;
