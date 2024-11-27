@@ -146,7 +146,6 @@ h2 {
   font-size: 32px;
   color: white;
   text-align: center;
-  width: 90%;
 }
 
 article {
@@ -299,6 +298,33 @@ details[open] summary::marker {
 
 /* Mostrar el contenido cuando el checkbox esté activado */
 input[type="checkbox"]:checked + .details-button + .details-content {
+  display: block;
+}
+
+/*Expandir titulos home*/
+/* Estilos básicos para el botón */
+.details-button2 {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
+/* Ocultar el texto inicialmente */
+.details-content2 {
+  display: none;
+}
+
+.detailstext2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mostrar el contenido cuando el checkbox esté activado */
+input[type="checkbox"]:checked + .details-button2 + .details-content2 {
   display: block;
 }
 
