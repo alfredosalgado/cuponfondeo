@@ -493,6 +493,7 @@ footer {
 
 .textfoot {
   font-style: italic;
+  color: #f8f9fa;
 }
 
 body {
@@ -588,7 +589,7 @@ body::before {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   article {
